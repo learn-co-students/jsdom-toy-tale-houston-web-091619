@@ -3,6 +3,12 @@ body {
   font-family: monospace;
 }
 
+.game-image {
+  width: 150px;
+  height: auto;
+  margin: auto;
+}
+
 #toy-header {
   display: flex;
   justify-content: center;
@@ -29,13 +35,29 @@ body {
   height: 25rem;
   display: inline-grid;
   margin: 1rem 2rem;
+  background: #ffe89e;
   box-shadow: 3px 4px #e04b52
+}
+
+.toy-frame {
+  width: 230px;
+  margin: 10px;
+  background: #fecd2f;
+  color: #2d72fc;
 }
 
 .toy-avatar {
   justify-self: center;
   height: 12rem;
   width: auto;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.flip-image {
+  color: #2d72fc;
 }
 
 button {
@@ -48,6 +70,22 @@ button {
   color: whitesmoke;
   font-size: 18px;
   justify-self: center;
+  margin: 3;
+ 
+}
+
+.buttons {
+  position: relative;
+  background-color: #e04b52;
+  border: none;
+  border-radius: 5px;
+  height: 3rem;
+  width: max-content;
+  color: whitesmoke;
+  font-size: 18px;
+  justify-self: center;
+  margin: 3;
+ 
 }
 
 button:hover {

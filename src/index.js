@@ -14,3 +14,13 @@ document.addEventListener("DOMContentLoaded", ()=>{
   })
 
 })
+
+  let allGameData = []
+
+  fetch('http://localhost:3000/toys'/*, { method: 'GET' }*/)
+  .then(res => {return res.json()}) //.then(res => res.json())
+  .then(data => {
+    allGameData = data
+    renderAllGames(allGameData)
+  })
+
